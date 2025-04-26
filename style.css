@@ -1,0 +1,173 @@
+*{
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand{
+    color: white !important;
+    font-weight: bold;
+}
+.navbar-brand:hover{
+    color: orangered !important;
+    text-shadow: 0 0 25px orangered
+                  0 0 50px orangered    ;
+   transform: scale(1.1);
+   transition: all 1s;
+}
+
+.nav-link:hover{
+    border-bottom: solid 1px orangered;
+    color: orangered !important;
+    text-shadow: 0 0 25px orangered
+                  0 0 50px orangered ;
+}
+.btn{
+    padding: 10px 28px !important;
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid transparent !important;
+    text-decoration-line: none !important;
+    border-radius: 8px !important;
+    font-size: 15px !important;
+    letter-spacing: 1px !important;
+    font-weight: 600 !important;
+    transition: 0.3s ease !important;
+ }
+ .btn:hover{
+    background-color: orangered !important;
+    box-shadow: 0 0 25px orangered;
+    color: white !important;
+ }
+
+ /* hero */
+.hero-section{
+    min-height: 100vh;
+    background: url('https://st4.depositphotos.com/11277488/31243/i/450/depositphotos_312437566-stock-photo-black-monochromatic-clothes-accessories-beauty.jpg');
+    background-position: center ;
+    background-size: cover;
+    background-attachment: fixed  ;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+ }
+.hero-section h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+/* about */
+.btn{
+    padding: 10px 28px !important;
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid transparent !important;
+    text-decoration-line: none !important;
+    border-radius: 8px !important;
+    font-size: 15px !important;
+    letter-spacing: 1px !important;
+    font-weight: 600 !important;
+    transition: 0.3s ease !important;
+ }
+ .btn:hover{
+    background-color: orangered !important;
+    box-shadow: 0 0 25px orangered;
+    color: white !important;
+ }
+ 
+.home{
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+ }
+ .home-content{
+    max-width: 800px;
+ }
+ .home-content h3{
+    font-size: 42px;
+ }
+ .home-content h3{
+    font-size: 62px;
+    line-height: 1.2;
+ }
+ .home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+ }
+ img{
+    border-radius: 50%;
+    width: 250px;
+    height: 50vh;
+ }
+ ::-webkit-scrollbar{
+    width: 15px;
+ }
+ ::-webkit-scrollbar-thumb{
+    background-color: orangered;
+ }
+ ::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 50px;
+ }
+
+ /* services */
+ .custom-card {
+   border-radius: 1rem;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease;
+ }
+
+ .custom-card:hover {
+   transform: scale(1.02);
+ }
+
+ .card-img-top {
+   height: 280px;
+   object-fit: cover;
+   border-top-left-radius: 1rem;
+   border-top-right-radius: 1rem;
+ }
+
+ /* footer */ 
+body {
+   margin: 0;
+   font-family: Arial, sans-serif;
+}
+.footer {
+   background: #1a1a1a54;
+   color: white;
+   padding: 40px 20px;
+   text-align: center;
+}
+.footer .logo {
+   font-size: 24px;
+   font-weight: bold;
+}
+.footer p {
+   margin: 10px 0;
+}
+.footer .links a {
+   color: white;
+   margin: 0 15px;
+   text-decoration: none;
+   font-size: 14px;
+}
+.footer .links a:hover {
+   text-decoration: underline;
+}
+.footer .social-icons a {
+   color: white;
+   margin: 0 10px;
+   font-size: 18px;
+   text-decoration: none;
+}
+.footer .social-icons a:hover {
+   color: #f39c12;
+}
+.footer .copyright {
+   margin-top: 20px;
+   font-size: 12px;
+   color: #ccc;
+}
