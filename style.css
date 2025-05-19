@@ -171,3 +171,7 @@ body {
    font-size: 12px;
    color: #ccc;
 }
+.form{
+   text-align: center;
+   padding: 20px 16px;
+}

@@ -1,17 +1,19 @@
+
 function sendToWhatsApp() {
-    const email = document.getElementById('exampleInputEmail1').value;
-    const password = document.getElementById('exampleInputPassword1').value;
-    const isChecked = document.getElementById('exampleCheck1').checked ? "Checked" : "Not Checked";
+    const firstName = document.getElementById("firstName").value;
+    const lastName = document.getElementById("lastName").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    const selectedOption = document.getElementById("inquiryType").value;
 
-    if (!email || !password) {
-        alert("Please fill in all fields before sending.");
-        return;
-    }
+    const fullMessage = `*New Business Inquiry*%0A` +
+                        `*Type:* ${selectedOption}%0A` +
+                        `*Name:* ${firstName} ${lastName}%0A` +
+                        `*Email:* ${email}%0A` +
+                        `*Message:* ${message}`;
 
-    const message = `Email: ${email}%0APassword: ${email}%0AChecked: ${isChecked}`;
-    const phoneNumber = '+2348146999846'; // Replace with your desired WhatsApp number (include country code).
+    const phoneNumber = "+2348089360606"; // Replace with your WhatsApp number without +
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(fullMessage)}`;
 
-    const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
-
-    window.open(whatsappURL, '_blank');
+    window.open(whatsappURL, "_blank");
 }
